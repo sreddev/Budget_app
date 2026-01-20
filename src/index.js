@@ -1,0 +1,21 @@
+/**
+ * App entry point (student-style)
+ * - Create React root in #root
+ * - Wrap App with BrowserRouter for routing
+ * - Use React.StrictMode for extra dev checks
+ */
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
+);
